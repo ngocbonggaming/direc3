@@ -1,0 +1,14 @@
+<script>
+const links = [
+    "https://www.effectivegatecpm.com/dx3gxw7q?key=72f85a90d5b08559657493adc27cd75b",
+  
+];
+
+let counter = parseInt(localStorage.getItem("rr_counter") || "0");
+counter++;
+localStorage.setItem("rr_counter", counter);
+
+const index = (counter - 1) % links.length;
+
+location.href = links[index];
+</script>
